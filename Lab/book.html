@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Haven | Book Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">📚 Book Haven</a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#books">Books</a></li>
+          <li><a href="index.html#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <!-- Back button returns to the home page -->
+    <a href="index.html#books" id="backBtn" class="btn btn-back">← Back to Books</a>
+
+    <!-- Book details are filled in by script.js -->
+    <article id="bookDetails" class="details"></article>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <p>© 2026 Book Haven | Web Technology Lab Experiment 1</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

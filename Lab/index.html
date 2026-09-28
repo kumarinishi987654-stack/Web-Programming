@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Haven | Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">📚 Book Haven</a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#books">Books</a></li>
+          <li><a href="index.html#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+      <div class="container">
+        <h1>Discover Your Next Great Book</h1>
+        <p>Explore our collection of books and discover detailed information about your favorite titles.</p>
+        <a href="#books" class="btn btn-light">Explore Books</a>
+      </div>
+    </section>
+
+    <!-- ===== BOOKS SECTION ===== -->
+    <section id="books" class="container section">
+      <h2>Our Books</h2>
+
+      <!-- Search box: filters the cards as the user types -->
+      <input type="search" id="searchInput" class="search-box"
+             placeholder="Search books..." aria-label="Search books by title, author or genre">
+
+      <!-- Book cards are created here by script.js -->
+      <div id="bookGrid" class="book-grid"></div>
+
+      <p id="noResults" class="no-results" hidden>No books found.</p>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About Book Haven</h2>
+        <p>Book Haven is a simple online book information website created to help users explore books and view detailed information about their favorite titles.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <p>© 2026 Book Haven | Web Technology Lab Experiment 1</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
